@@ -9,8 +9,10 @@ author1:
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
     i6020345
+     > MES/WMS Consultant and Software Developer
+     > I live in Gyeonggi-do, South Korea, with my wife and our three children.
     
-    Open `_data/authors.yml` to edit this text.
+  # Open `_data/authors.yml` to edit this text.
 
   # This photo will be used in the about section
   picture:
