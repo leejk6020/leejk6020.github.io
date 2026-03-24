@@ -27,7 +27,7 @@ redirect_from:
 {:.figcaption}
 
 
-**SINOSYS** 에서 CTO로 근무중이며 is a boutique [[Sinosys](https://www.sinosys.co.kr/)]{:target="_blank"} theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress. 
+**SINOSYS** 에서 CTO로 근무중이며 is a boutique [Sinosys](https://www.sinosys.co.kr/){:target="_blank"} theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress. 
 
 It includes a blog that is suitable for both prose and technical documentation, a portfolio to showcase your projects, and a resume template that looks amazing on the web and in print.
 
