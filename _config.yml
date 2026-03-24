@@ -50,8 +50,8 @@ author:
 menu:
   - title:             Daily life working in industry
     url:               /daily-life/
-  - title:             Documentation
-    url:               /docs/
+  - title:             Miscellaneous
+    url:               /mics/
   - title:             About
     url:               /about/
 
