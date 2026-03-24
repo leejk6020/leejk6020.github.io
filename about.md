@@ -27,12 +27,12 @@ redirect_from:
 {:.figcaption}
 
 
-**SINOSYS** 에서 CTO로 근무중이며 is a boutique [Sinosys](https://www.sinosys.co.kr/){:target="_blank"} theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress. 
+**SINOSYS** 에서 CTO로 근무중이며 is a boutique [Sinosys](https://www.sinosys.co.kr/){:target="_blank"} 멋진 동료들과 고군분투 하고있습니다.
 
-It includes a blog that is suitable for both prose and technical documentation, a portfolio to showcase your projects, and a resume template that looks amazing on the web and in print.
+만에 하나 MES, WMS와 같은 시스템 구축 예정중이시라면 [sales@sinosys.co.kr](mailto:sales@sinosys.co.kr){:target="_blank"} 로 메일주시면 상담해 드릴 수 있습니다.
 
-> Your complete presence on the web — A [blog], [portfolio], and [resume].
-{:.lead}
+<!-- > Your complete presence on the web — A [blog], [portfolio], and [resume].
+{:.lead} -->
 
 
 ## A Personal Site That Won't Disappear
