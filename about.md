@@ -21,7 +21,7 @@ redirect_from:
 1. this list will be replaced by the toc
 {:toc .large-only}
 
-![Screenshot](pt01.png){:.lead width="1920" height="1080" loading="lazy"}
+![Screenshot](/assets/img/jklee/pt01.png){:.lead width="1920" height="1080" loading="lazy"}
 
 Hydejack's cover page on a variety of screen sizes.
 {:.figcaption}
