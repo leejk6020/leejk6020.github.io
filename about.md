@@ -35,15 +35,15 @@ redirect_from:
 {:.lead} -->
 
 
-## A Personal Site That Won't Disappear
+## 원래는 개발자...
 
-**Hydejack** is 100% built on Open Source software, and is Open Source itself, save for parts of the PRO version. The PRO version is a one-time payment that gives you the right to use it forever.
+**개발자** 로 2004년 첫 취직부터 쭉 살다가 정신차려보니 지금은 PI(Process Inovation), 및 PM업무를 주로 하고있네요.... 아직은 찔끔찔끔 개발도 하고있긴 합니다만....그립습니다..
 
-Hydejack is all static sites. _HTML_. All you need is a web server — any web server — to have a professional web presence that lasts a lifetime.
+## 취미...
 
+**복싱** 살기위해서 꾸준히 하고있습니다 ㅎ
 
-## A Free Blogging Theme
-**Hydejack** started out as a free blogging theme for Jekyll — and continues to be so.
+**일렉기타** 생초보이지만 가끔가끔 연습하면서 살고있습니다.
 
 <!--posts-->
 
