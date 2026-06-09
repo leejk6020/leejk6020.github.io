@@ -1,0 +1,8 @@
+# 로컬 미리보기 전용 오버라이드.
+# 배포(GitHub Pages)는 _config.yml 의 remote_theme 을 사용하고,
+# 로컬에서는 설치된 gem 테마를 사용하도록 덮어쓴다.
+#
+# 사용법:
+#   bundle exec jekyll serve --config _config.yml,_config_local.yml
+theme: jekyll-theme-hydejack
+remote_theme:
