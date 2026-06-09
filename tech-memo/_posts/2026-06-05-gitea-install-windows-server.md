@@ -107,7 +107,14 @@ Get-Service gitea
 ## 6. 동작 확인
 
 다시 `http://localhost:3000/` 에 접속해 로그인되면 완료입니다.
-새 저장소를 만들고 클론 테스트까지 해보세요.
+**"계정이 성공적으로 생성되었습니다. 환영합니다!"** 와 함께 대시보드가 보이면 설치 성공입니다.
+
+![Gitea 대시보드](/assets/img/tech-memo/04-gitea-dashboard.png){:.lead loading="lazy"}
+
+설치 완료 후 첫 로그인 — 관리자 계정으로 들어온 대시보드.
+{:.figcaption}
+
+이제 새 저장소를 만들고 클론 테스트까지 해보세요.
 
 ```bash
 git clone http://<서버주소>:3000/<user>/<repo>.git
