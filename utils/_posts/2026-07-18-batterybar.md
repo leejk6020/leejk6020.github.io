@@ -122,3 +122,36 @@ system_profiler SPBluetoothDataType -json
 ```
 
 **기술 스택 / Tech stack**: Swift + SwiftUI (`MenuBarExtra`, `LSUIElement=true`) · ServiceManagement (`SMAppService`, launch at login) · UserNotifications (`UNUserNotificationCenter`, 5% hysteresis).
+
+---
+
+## 업데이트 이력 / Changelog / 更新履歴
+
+버전은 [유의적 버전(SemVer)](https://semver.org/lang/ko/)을 따릅니다. / Versioning follows [SemVer](https://semver.org/). / バージョンは [SemVer](https://semver.org/lang/ja/) に従います。
+{:.note}
+
+### v1.0.0 — 2026-07-18
+
+첫 공개 릴리스 / First release / 初リリース
+
+**🇰🇷 한국어**
+- 메뉴바에서 연결된 Bluetooth 기기들의 배터리를 한눈에 확인.
+- 기기별 아이콘 + 배터리 막대(초록/주황/빨강) 표시. AirPods 등은 **왼쪽 / 오른쪽 / 케이스** 개별 표시.
+- 메뉴바 아이콘이 **가장 낮은 배터리**를 반영하고 옆에 최저 % 숫자 표시.
+- 2분마다 자동 갱신 + 수동 새로고침 버튼.
+- **로그인 시 자동 실행** 토글, **저배터리 알림**(임계값 10/15/20/30/40%, 회복 후 재알림).
+- **언어 전환** — English(기본) / 한국어 / 日本語, 시스템 언어와 무관하게 앱 내에서 즉시 전환.
+
+**🇺🇸 English**
+- See the battery level of every connected Bluetooth device right from the menu bar: keyboards, mice, trackpads, and AirPods (left / right / case shown separately).
+- Per-device icon + battery bar (green/orange/red). The menu-bar icon reflects the **lowest** battery and shows its percentage.
+- Auto-refresh every 2 minutes + manual refresh button.
+- **Launch at login** toggle, **low-battery notifications** with an adjustable threshold (10/15/20/30/40%, re-arms after recovery).
+- **Language options** — English (default) / Korean / Japanese, switchable in-app regardless of system language.
+
+**🇯🇵 日本語**
+- 接続中のすべての Bluetooth デバイス（キーボード・マウス・トラックパッド・AirPods の左/右/ケース）のバッテリー残量をメニューバーから確認。
+- デバイスごとのアイコン + バッテリーバー（緑/橙/赤）。メニューバーのアイコンは**最も低いバッテリー**を反映し、パーセントも表示。
+- 2分ごとの自動更新 + 手動更新ボタン。
+- **ログイン時に自動起動** トグル、**低バッテリー通知**（しきい値 10/15/20/30/40%、回復後に再通知）。
+- **言語切替** — English（既定）/ 한국어 / 日本語、システム言語とは無関係にアプリ内で即時切替。
