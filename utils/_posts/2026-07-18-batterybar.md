@@ -2,7 +2,7 @@
 layout: post
 title: "BatteryBar — 블루투스 기기 배터리를 메뉴바에서"
 description: >
-  연결된 블루투스 키보드·마우스·트랙패드·AirPods의 배터리 상태를 macOS 메뉴바에 표시하는 앱. 한국어·English·日本語 소개와 다운로드(DMG)를 제공합니다.
+  연결된 블루투스 키보드·마우스·트랙패드·AirPods의 배터리 상태를 macOS 메뉴바에 표시하는 앱. Apple 공증(notarized) 완료. 한국어·English·日本語 소개와 다운로드(DMG)를 제공합니다.
 image:
   path: /assets/img/utils/batterybar-icon.png
 categories: [utils]
@@ -15,11 +15,15 @@ tags: [macos, swift, menubar, bluetooth]
 
 🌐 **언어 / Language / 言語** — [한국어](#한국어) · [English](#english) · [日本語](#日本語)
 
+![BatteryBar 메뉴바 팝오버](/assets/img/utils/batterybar-menu.png)
+{:.border}
+
 ## 다운로드 / Download
 
-<a href="/assets/downloads/BatteryBar.dmg" class="btn" download>⬇️ BatteryBar.dmg (v1.0, ~420KB)</a>
+<a href="/assets/downloads/BatteryBar.dmg" class="btn" download>⬇️ BatteryBar.dmg (v1.0.0, ~464KB)</a>
 
-- **Version**: 1.0  ·  **Requires**: macOS 13+  ·  **Format**: DMG
+- **Version**: 1.0.0  ·  **Requires**: macOS 13+  ·  **Format**: DMG
+- ✅ **Apple 공증(notarization) 완료** — Developer ID 서명 + 스테이플까지 끝난 빌드라, 다운로드 후 바로 실행됩니다. 별도 보안 설정이 필요 없습니다. / Notarized by Apple — no security workaround needed. / Apple の公証済み — セキュリティ設定の変更は不要です。
 - DMG를 열면 3개국어 안내 파일(`먼저 읽어주세요 — READ ME.txt`)이 함께 들어 있습니다. / A trilingual guide (`READ ME.txt`) is included inside the DMG. / DMG 内に3か国語の案内ファイルが同梱されています。
 
 ---
@@ -40,16 +44,13 @@ tags: [macos, swift, menubar, bluetooth]
 
 1. 위에서 **BatteryBar.dmg** 를 다운로드합니다.
 2. DMG를 열고 **BatteryBar** 를 **응용 프로그램(Applications)** 폴더로 드래그합니다.
-3. 처음 실행 시 **"확인되지 않은 개발자"** 경고가 나오면 → **시스템 설정 › 개인정보 보호 및 보안** 맨 아래의 **[확인 없이 열기]** 를 누르세요.
-4. 실행하면 메뉴바 우측에 배터리 아이콘 + 최저 배터리 %가 나타납니다.
+3. 응용 프로그램 폴더에서 **BatteryBar** 를 더블클릭하면 메뉴바 우측에 배터리 아이콘 + 최저 배터리 %가 나타납니다.
+
+> 이 앱은 Apple 공증을 받았으므로 **"확인되지 않은 개발자" 경고가 나오지 않습니다.** 예전 버전(v1.0 ad-hoc 서명본)을 받으셨다면 새로 받아 덮어써 주세요.
+{:.note}
 
 > 로그인 항목과 알림은 앱을 `/Applications` 로 옮긴 뒤 실행하는 것을 권장합니다.
 {:.note}
-
-**"확인되지 않은 개발자" 경고 해제** — 이 앱은 ad-hoc 서명만 되어 있고 Apple 공증이 없습니다. 아래 두 방법 중 하나로 해제하세요. (둘 다 macOS 26.5.2에서 검증 완료)
-
-- **방법 A (클릭만, 권장)**: **시스템 설정 › 개인정보 보호 및 보안** 맨 아래 **[확인 없이 열기]** 버튼을 누릅니다.
-- **방법 B (터미널)**: `xattr -dr com.apple.quarantine "/Applications/BatteryBar.app"`
 
 ---
 
@@ -69,16 +70,13 @@ Shows the battery level of connected Bluetooth devices — keyboard, mouse, trac
 
 1. Download **BatteryBar.dmg** above.
 2. Open the DMG and drag **BatteryBar** into your **Applications** folder.
-3. On first launch, if you see an **"unidentified developer"** warning → go to **System Settings › Privacy & Security** and click **[Open Anyway]** at the bottom.
-4. The battery icon and lowest battery % appear on the right side of the menu bar.
+3. Double-click **BatteryBar** in the Applications folder. The battery icon and lowest battery % appear on the right side of the menu bar.
+
+> The app is notarized by Apple, so **no "unidentified developer" warning appears.** If you downloaded the earlier ad-hoc signed v1.0 build, replace it with this one.
+{:.note}
 
 > Moving the app to `/Applications` before first launch is recommended so login-item and notification paths stay stable.
 {:.note}
-
-**Bypassing the "unidentified developer" warning** — the app is ad-hoc signed and not notarized by Apple. Use one of the two methods below (both verified on macOS 26.5.2):
-
-- **Method A (clicks only, recommended)**: In **System Settings › Privacy & Security**, click **[Open Anyway]** at the bottom.
-- **Method B (Terminal)**: `xattr -dr com.apple.quarantine "/Applications/BatteryBar.app"`
 
 ---
 
@@ -98,30 +96,34 @@ Shows the battery level of connected Bluetooth devices — keyboard, mouse, trac
 
 1. 上の **BatteryBar.dmg** をダウンロードします。
 2. DMG を開き、**BatteryBar** を **アプリケーション（Applications）** フォルダへドラッグします。
-3. 初回起動時に **「未確認の開発元」** の警告が出たら → **システム設定 › プライバシーとセキュリティ** の一番下にある **[このまま開く]** をクリックします。
-4. 起動するとメニューバー右側にバッテリーアイコンと最低バッテリー % が表示されます。
+3. アプリケーションフォルダで **BatteryBar** をダブルクリックすると、メニューバー右側にバッテリーアイコンと最低バッテリー % が表示されます。
+
+> このアプリは Apple の公証を受けているため、**「未確認の開発元」の警告は表示されません。** 以前の ad-hoc 署名版（v1.0）をダウンロードした方は、こちらで置き換えてください。
+{:.note}
 
 > ログイン項目と通知は、アプリを `/Applications` に移してから起動することを推奨します。
 {:.note}
-
-**「未確認の開発元」警告の解除** — このアプリは ad-hoc 署名のみで、Apple の公証（notarization）はありません。以下の2つの方法のいずれかで解除してください。（どちらも macOS 26.5.2 で検証済み）
-
-- **方法A（クリックのみ、推奨）**: **システム設定 › プライバシーとセキュリティ** の一番下の **[このまま開く]** ボタンをクリック。
-- **方法B（ターミナル）**: `xattr -dr com.apple.quarantine "/Applications/BatteryBar.app"`
 
 ---
 
 ## 동작 방식 / How it works / 仕組み
 
-배터리 데이터는 macOS 내장 명령을 파싱해서 얻습니다. 별도 권한이나 백그라운드 데몬이 필요 없습니다. /
-Battery data comes from a built-in macOS command — no special permissions or background daemon required. /
-バッテリー情報は macOS 標準コマンドの解析で取得します。特別な権限やバックグラウンドデーモンは不要です。
+배터리 데이터는 macOS 내장 소스 **두 곳**을 합쳐서 얻습니다. 어느 한쪽도 단독으로는 모든 기기를 커버하지 못합니다. 별도 권한이나 백그라운드 데몬은 필요 없습니다. /
+Battery data is merged from **two** built-in macOS sources — neither covers every device on its own. No special permissions or background daemon required. /
+バッテリー情報は macOS 標準の**2つのソース**を統合して取得します。どちらか一方だけでは全デバイスを網羅できません。特別な権限やバックグラウンドデーモンは不要です。
+
+| 소스 / Source | 커버리지 / Coverage |
+|---|---|
+| IORegistry (`AppleDeviceManagementHIDEventService` 의 `BatteryPercent`) | Magic Keyboard / Mouse / Trackpad |
+| `system_profiler SPBluetoothDataType -json` | AirPods (`Case`/`Left`/`Right`) 및 서드파티 기기 |
 
 ```sh
 system_profiler SPBluetoothDataType -json
 ```
 
-**기술 스택 / Tech stack**: Swift + SwiftUI (`MenuBarExtra`, `LSUIElement=true`) · ServiceManagement (`SMAppService`, launch at login) · UserNotifications (`UNUserNotificationCenter`, 5% hysteresis).
+**기술 스택 / Tech stack**: Swift + SwiftUI (`MenuBarExtra`, `LSUIElement=true`) · IOKit (IORegistry 조회) · ServiceManagement (`SMAppService`, launch at login) · UserNotifications (`UNUserNotificationCenter`, 5% hysteresis).
+
+**배포 / Distribution**: Xcode archive → Developer ID Application 서명 → `notarytool` 공증 → `stapler` 스테이플 → DMG.
 
 ---
 
@@ -130,7 +132,27 @@ system_profiler SPBluetoothDataType -json
 버전은 [유의적 버전(SemVer)](https://semver.org/lang/ko/)을 따릅니다. / Versioning follows [SemVer](https://semver.org/). / バージョンは [SemVer](https://semver.org/lang/ja/) に従います。
 {:.note}
 
-### v1.0.0 — 2026-07-18
+### v1.0.0 — 2026-07-24 (공증판 / notarized build / 公証版)
+
+**🇰🇷 한국어**
+- **Apple 공증 완료** — Developer ID 서명 + notarization + staple. "확인되지 않은 개발자" 경고와 `xattr` 우회 안내가 더 이상 필요 없습니다.
+- **IORegistry 기반 조회 추가** — Magic Keyboard / Mouse / Trackpad를 `system_profiler` 없이도 읽습니다. 기존 `system_profiler` 조회와 병합해 AirPods·서드파티 기기까지 함께 표시합니다.
+- 같은 기기가 두 소스에서 중복으로 잡히지 않도록 주소 형식을 정규화해 병합.
+- 로그인 항목 토글을 macOS 13에서도 안전하게 동작하도록 수정.
+
+**🇺🇸 English**
+- **Notarized by Apple** — Developer ID signature + notarization + staple. The "unidentified developer" warning and the `xattr` workaround are gone.
+- **Added an IORegistry data source** — reads Magic Keyboard / Mouse / Trackpad without `system_profiler`, and merges with the existing `system_profiler` lookup so AirPods and third-party devices still show up.
+- Device addresses are normalized so the same device never appears twice when both sources report it.
+- Fixed the launch-at-login toggle to work correctly on macOS 13.
+
+**🇯🇵 日本語**
+- **Apple の公証を取得** — Developer ID 署名 + notarization + staple。「未確認の開発元」警告と `xattr` の回避手順は不要になりました。
+- **IORegistry からの取得を追加** — `system_profiler` なしで Magic Keyboard / Mouse / Trackpad を読み取り、既存の `system_profiler` 取得と統合して AirPods やサードパーティ製デバイスも表示します。
+- 両ソースが同じデバイスを報告しても重複しないようアドレス形式を正規化。
+- ログイン時に自動起動のトグルを macOS 13 でも正しく動作するよう修正。
+
+### v1.0 — 2026-07-18
 
 첫 공개 릴리스 / First release / 初リリース
 
