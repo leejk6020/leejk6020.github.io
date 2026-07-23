@@ -79,9 +79,9 @@ copyright:             © 2026. All rights reserved.
 #   3. https://giscus.app 에서 저장소 입력 후 발급되는 값을 아래에 복사
 giscus:
   repo:                leejk6020/leejk6020.github.io
-  repo_id:             ''      # e.g. R_kgDOxxxxxxx
+  repo_id:             R_kgDORluxYw
   category:            Comments
-  category_id:         ''      # e.g. DIC_kwDOxxxxxxx
+  category_id:         DIC_kwDORluxY84DBxxZ
   mapping:             pathname
   lang:                ko
   theme:               preferred_color_scheme
