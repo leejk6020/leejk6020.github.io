@@ -11,7 +11,9 @@ Configure via the `giscus` block in `_config.yml`.
   var container = d.getElementById("giscus_thread");
   if (!container) return;
 
-  // Re-created on every (push-state) page load so the thread follows the current page.
+  /* Re-created on every (push-state) page load so the thread follows the current page.
+     NOTE: no `//` line comments in here — the HTML compressor strips newlines,
+     which would comment out the rest of the script. */
   container.innerHTML = "";
 
   var s = d.createElement("script");
