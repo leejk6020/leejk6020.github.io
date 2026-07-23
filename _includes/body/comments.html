@@ -1,0 +1,13 @@
+{%- comment -%}
+Overrides the theme's `_includes/body/comments.html`.
+Identical to the original, except the section is also hidden while the comment
+provider is unconfigured — otherwise every post would show an empty "Comments"
+heading. See the `giscus` block in `_config.yml`.
+{%- endcomment -%}
+{% assign giscus = site.giscus %}
+{% if page.comments and giscus.repo_id and giscus.repo_id != '' and giscus.category_id and giscus.category_id != '' %}
+<aside class="comments related" role="complementary">
+  <h2 class="hr-bottom">{{ site.data.strings.comments | default:"Comments" }}</h2>
+  {% include my-comments.html %}
+</aside>
+{% endif %}

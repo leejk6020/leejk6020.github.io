@@ -1,0 +1,36 @@
+{%- comment -%}
+Overrides the theme's Disqus-based `_includes/my-comments.html` with giscus
+(comments stored in this repository's GitHub Discussions).
+Configure via the `giscus` block in `_config.yml`.
+{%- endcomment -%}
+{% assign giscus = site.giscus %}
+{% if giscus.repo_id and giscus.repo_id != '' and giscus.category_id and giscus.category_id != '' %}
+<div id="giscus_thread"></div>
+<noscript>댓글을 보려면 JavaScript를 활성화해 주세요.</noscript>
+<script>!function (w, d) {
+  var container = d.getElementById("giscus_thread");
+  if (!container) return;
+
+  // Re-created on every (push-state) page load so the thread follows the current page.
+  container.innerHTML = "";
+
+  var s = d.createElement("script");
+  s.src = "https://giscus.app/client.js";
+  s.setAttribute("data-repo", {{ giscus.repo | jsonify }});
+  s.setAttribute("data-repo-id", {{ giscus.repo_id | jsonify }});
+  s.setAttribute("data-category", {{ giscus.category | jsonify }});
+  s.setAttribute("data-category-id", {{ giscus.category_id | jsonify }});
+  s.setAttribute("data-mapping", {{ giscus.mapping | default: "pathname" | jsonify }});
+  s.setAttribute("data-strict", "1");
+  s.setAttribute("data-reactions-enabled", {{ giscus.reactions_enabled | default: "1" | jsonify }});
+  s.setAttribute("data-emit-metadata", "0");
+  s.setAttribute("data-input-position", {{ giscus.input_position | default: "top" | jsonify }});
+  s.setAttribute("data-theme", {{ giscus.theme | default: "preferred_color_scheme" | jsonify }});
+  s.setAttribute("data-lang", {{ giscus.lang | default: "ko" | jsonify }});
+  s.setAttribute("data-loading", "lazy");
+  s.crossOrigin = "anonymous";
+  s.async = true;
+
+  container.appendChild(s);
+}(window, document);</script>
+{% endif %}
